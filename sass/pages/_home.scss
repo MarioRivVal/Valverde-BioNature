@@ -1,0 +1,60 @@
+.section_about {
+    padding: 25rem 0;
+    margin-top: -20vh;
+    background-color: $color-grey-light-1;
+}
+
+.section_features {
+    background-image: linear-gradient(
+            to top right,
+            rgba($primary-color-light, 0.5),
+            rgba($primary-color-dark, 0.1)
+        ),
+        url(../img/section_features.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 20rem 0;
+    margin-top: -10rem;
+    transform: skewY(-7deg);
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.section_services {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+.section_stories {
+    position: relative;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section_book {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        $primary-color-light,
+        $primary-color-dark
+    );
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
